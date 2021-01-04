@@ -1,3 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+.App {
+  max-width: 600px;
+  background-image: url('./img/coldBackground.jpg');
+  background-size:cover;
+  background-position:bottom;
+  transition: 0.4s ease-out;
+  margin:0 auto;
+}
+
+.App.warm {
+  background-image: url('./img/warmBackground.jpg');
+}
+
+main  {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.75));
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
